@@ -5,9 +5,9 @@ import os
 from pathlib import Path
 
 # ========== PATH CONFIGURATION ==========
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent
 DATA_DIR = PROJECT_ROOT / "data"
-DATA_FILE = DATA_DIR / "data_udara_clean(update).csv"
+DATA_FILE = DATA_DIR / "pm_data.csv"
 
 # ========== MODEL CONFIGURATION ==========
 LOOK_BACK = 48  # 48 step = 24 jam (30 menit per step)
